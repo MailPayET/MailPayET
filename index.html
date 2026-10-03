@@ -3,110 +3,191 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MailPay — create eligible Gmail accounts using our provided information and get paid after verification.">
-<title>MailPay — Create & Get Paid</title>
+<meta name="description" content="MailPay — Create eligible Gmail accounts using our provided information and get paid after verification.">
+<title>MailPay — Create & Get Paid | ይፍጠሩ እና ይከፈሉ</title>
 <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="img.png">
 </head>
 <body>
 <header class="nav">
   <div class="brand">Mail<span>Pay</span></div>
-  <a class="nav-btn" href="https://t.me/MailPayEt" target="_blank" rel="noopener">Public Channel</a>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button id="btn-en" class="active" onclick="switchLang('en')">🇬🇧 EN</button>
+      <button id="btn-am" onclick="switchLang('am')">🇪🇹 አማርኛ</button>
+    </div>
+    <a class="nav-btn" href="https://t.me/MailPayEt" target="_blank" rel="noopener">Public Channel</a>
+  </div>
 </header>
 
 <main>
 <section class="hero">
-  <div class="badge">🇪🇹 Ethiopia • Simple & Easy</div>
-  <h1>Create Gmail Accounts & Get Paid</h1>
-  <p class="hero-text">
+  <div class="badge">🇪🇹 Ethiopia • Simple & Easy / በቀላል መንገድ</div>
+  <h1 class="lang-en">Create Gmail Accounts & Get Paid</h1>
+  <h1 class="lang-am" style="display:none;">የጂሜይል አካውንት በመክፈት ገንዘብ ያግኙ</h1>
+  
+  <p class="hero-text lang-en">
     We provide the required information. You create the account, submit it for verification,
     and receive <strong>10 ETB for each approved account</strong>.
+  </p>
+  <p class="hero-text lang-am" style="display:none;">
+    እኛ አስፈላጊውን መረጃ እንሰጥዎታለን። እርሱ አካውንቱን ይከፍታሉ፣ ለማረጋገጫ ይልካሉ፣ እና <strong>ለእያንዳንዱ ለፀደቀ አካውንት 10 ብር</strong> ይቀበላሉ።
   </p>
 
   <div class="price-card">
     <div>
-      <span class="small">OUR OFFER</span>
+      <span class="small lang-en">OUR OFFER</span>
+      <span class="small lang-am" style="display:none;">የእኛ ክፍያ</span>
       <strong>10 ETB</strong>
-      <span>per approved account</span>
+      <span class="lang-en">per approved account</span>
+      <span class="lang-am" style="display:none;">ለእያንዳንዱ የተረጋገጠ አካውንት</span>
     </div>
     <div class="check">✓</div>
   </div>
 
-  <a class="primary-btn" href="#how">How It Works</a>
-  <p class="note">Payment is processed within 3 days after verification.</p>
+  <a class="primary-btn" href="https://t.me/MailPay_EthiopiaBot" target="_blank" rel="noopener">
+    <span class="lang-en">Start on Telegram Bot (@MailPay_EthiopiaBot)</span>
+    <span class="lang-am" style="display:none;">በTelegram Bot ይጀምሩ (@MailPay_EthiopiaBot)</span>
+  </a>
+  <p class="note lang-en">Payment is processed within 3 days after verification.</p>
+  <p class="note lang-am" style="display:none;">ክፍያው ከተረጋገጠበት ቀን ጀምሮ በ3 ቀናት ውስጥ ይከናወናል።</p>
 </section>
 
 <section id="how" class="steps">
-  <h2>How it works</h2>
+  <h2 class="lang-en">How It Works</h2>
+  <h2 class="lang-am" style="display:none;">እንዴት እንደሚሰራ</h2>
   <div class="grid">
     <article>
       <div class="number">1</div>
-      <h3>Get the information</h3>
-      <p>Contact us to receive the information and instructions needed for the account creation process.</p>
+      <h3 class="lang-en">Get the information</h3>
+      <h3 class="lang-am" style="display:none;">መረጃውን ይቀበሉ</h3>
+      <p class="lang-en">Start our Telegram bot to receive the exact account details and instructions.</p>
+      <p class="lang-am" style="display:none;">የጂሜይል መረጃዎችን ለማግኘት የቴሌግራም ቦቱን ያስጀምሩ።</p>
     </article>
     <article>
       <div class="number">2</div>
-      <h3>Create the account</h3>
-      <p>Follow the provided instructions and create the account through Google's normal signup process.</p>
+      <h3 class="lang-en">Create the account</h3>
+      <h3 class="lang-am" style="display:none;">አካውንቱን ይክፈቱ</h3>
+      <p class="lang-en">Follow the provided instructions and create the Gmail account through normal signup.</p>
+      <p class="lang-am" style="display:none;">በተሰጠዎት መረጃ መሰረት የጂሜይል አካውንቱን በትክክል ይክፈቱ።</p>
     </article>
     <article>
       <div class="number">3</div>
-      <h3>Submit & get paid</h3>
-      <p>Submit the account for verification. Approved accounts are paid at 10 ETB within 3 days.</p>
+      <h3 class="lang-en">Submit & get paid</h3>
+      <h3 class="lang-am" style="display:none;">ስክሪንሾት ይላኩ & ይከፈሉ</h3>
+      <p class="lang-en">Submit a screenshot in the bot. Approved accounts are paid 10 ETB within 3 days.</p>
+      <p class="lang-am" style="display:none;">ስክሪንሾት በቦቱ ይላኩ። ሲረጋገጥ በ3 ቀናት ውስጥ 10 ETB ይከፈልዎታል።</p>
     </article>
+  </div>
+</section>
+
+<section class="removal-guide">
+  <div class="removal-box">
+    <h2 class="lang-en">📱 How to Remove the Account from Your Device</h2>
+    <h2 class="lang-am" style="display:none;">📱 አካውንቱን ከስልክዎ ላይ እንዴት ማጥፋት እንደሚችሉ</h2>
+    <p class="section-intro lang-en">After submitting your screenshot, you can safely remove the created account from your device using these steps:</p>
+    <p class="section-intro lang-am" style="display:none;">ስክሪንሾቱን ከላኩ በኋላ አካውንቱን በቀላሉ ከስልክዎ ላይ ማጥፋት ይችላሉ:</p>
+    
+    <ol class="steps-list lang-en">
+      <li>Go to <strong>Settings</strong></li>
+      <li>Scroll down and tap <strong>Accounts and Backup</strong></li>
+      <li>Click <strong>Manage Accounts</strong></li>
+      <li>Select the account you want to remove</li>
+      <li>Click <strong>Remove Account</strong> below the selected account</li>
+    </ol>
+    <ol class="steps-list lang-am" style="display:none;">
+      <li>ወደ <strong>Settings</strong> ይግቡ</li>
+      <li>ወደ ታች ወርደው <strong>Accounts and Backup</strong> የሚለውን ይጫኑ</li>
+      <li><strong>Manage Accounts</strong> የሚለውን ይጫኑ</li>
+      <li>ማጥፋት የሚፈልጉትን አካውንት ይምረጡ</li>
+      <li>ከስሩ <strong>Remove Account</strong> የሚለውን ይጫኑ</li>
+    </ol>
   </div>
 </section>
 
 <section class="requirements">
-  <h2>Important</h2>
-  <ul>
+  <h2 class="lang-en">Important Rules</h2>
+  <h2 class="lang-am" style="display:none;">አስፈላጊ ደንቦች</h2>
+  <ul class="lang-en">
     <li>Only create and submit accounts through Google's normal account-creation process.</li>
-    <li>Do not use stolen identities, compromised information, or deceptive information.</li>
-    <li>Do not submit accounts that have been compromised or used for abuse.</li>
-    <li>Accounts are subject to verification and may be rejected if they do not meet our requirements.</li>
-    <li>Do not share passwords or sensitive personal information outside the secure process we provide.</li>
+    <li>Use the exact credentials (name, email, password) provided by our Telegram Bot.</li>
+    <li>Ensure your payment details (Telebirr, M-Pesa, CBE) are accurate before submitting.</li>
+    <li>Accounts are subject to verification before payment release.</li>
+  </ul>
+  <ul class="lang-am" style="display:none;">
+    <li>በቦቱ የተሰጠዎትን ትክክለኛ መረጃ ብቻ በመጠቀም አካውንት ይክፈቱ።</li>
+    <li>አካውንቱን ከከፈቱ በኋላ ስክሪንሾት በቦቱ በኩል መላክዎን ያረጋግጡ።</li>
+    <li>የክፍያ መረጃዎን (ቴሌብር፣ M-Pesa፣ ወይም ንግድ ባንክ) በጥንቃቄ ያስገቡ።</li>
+    <li>ክፍያ የሚፈጸመው አካውንቱ በAdmin ከተረጋገጠ በኋላ ነው።</li>
   </ul>
 </section>
 
 <section class="payments">
-  <div class="badge">PAYMENT METHODS</div>
-  <h2>Get paid your way</h2>
-  <p class="section-intro">
-    After successful verification, payment can be sent using one of our available Ethiopian payment methods.
+  <div class="badge">PAYMENT METHODS / የክፍያ አማራጮች</div>
+  <h2 class="lang-en">Get Paid Your Way</h2>
+  <h2 class="lang-am" style="display:none;">የሚፈልጉትን የክፍያ አማራጭ ይምረጡ</h2>
+  <p class="section-intro lang-en">
+    After successful verification, payment can be sent directly via your preferred Ethiopian payment method.
+  </p>
+  <p class="section-intro lang-am" style="display:none;">
+    ማረጋገጫ እንደተጠናቀቀ ክፍያው በቀጥታ በፈለጉት የክፍያ አማራጭ ይላክልዎታል።
   </p>
   <div class="payment-grid">
     <article class="payment-card">
       <div class="payment-icon">₿</div>
-      <div><h3>telebirr</h3><p>Mobile money payment</p></div>
+      <div><h3>telebirr</h3><p class="lang-en">Mobile Money</p><p class="lang-am" style="display:none;">ቴሌብር</p></div>
     </article>
     <article class="payment-card">
       <div class="payment-icon">M</div>
-      <div><h3>M-PESA</h3><p>Mobile money payment</p></div>
+      <div><h3>M-PESA</h3><p class="lang-en">Mobile Money</p><p class="lang-am" style="display:none;">ኤም-ፔሳ</p></div>
     </article>
     <article class="payment-card">
       <div class="payment-icon cbe-icon">CBE</div>
-      <div><h3>Commercial Bank of Ethiopia</h3><p>Bank payment</p></div>
+      <div><h3>CBE</h3><p class="lang-en">Commercial Bank of Ethiopia</p><p class="lang-am" style="display:none;">የኢትዮጵያ ንግድ ባንክ</p></div>
     </article>
   </div>
-  <p class="payment-note">Payment availability may depend on your preferred method and successful verification.</p>
 </section>
 
 <section id="sell" class="sell">
   <div>
-    <span class="badge">READY TO START?</span>
-    <h2>Get started with MailPay</h2>
-    <p>Contact us to receive the current instructions and begin the verification process.</p>
+    <span class="badge">READY TO START? / ለመጀመር ዝግጁ ነዎት?</span>
+    <h2 class="lang-en">Get Started with MailPay Bot</h2>
+    <h2 class="lang-am" style="display:none;">በMailPay Bot አሁኑኑ ይጀምሩ</h2>
+    <p class="lang-en">Open our Telegram Bot to receive task instructions and earn 10 ETB per account.</p>
+    <p class="lang-am" style="display:none;">የስራ መረጃዎችን ለማግኘት እና በየአካውንቱ 10 ETB ለማግኘት የቴሌግራም ቦቱን ይክፈቱ።</p>
   </div>
   <div class="sell-actions">
-    <a class="primary-btn" href="https://t.me/CHUNKLA47" target="_blank" rel="noopener">DM @CHUNKLA47</a>
-    <a class="secondary-btn" href="https://t.me/MailPayEt" target="_blank" rel="noopener">Join Public Channel</a>
+    <a class="primary-btn" href="https://t.me/MailPay_EthiopiaBot" target="_blank" rel="noopener">
+      🤖 Open @MailPay_EthiopiaBot
+    </a>
+    <a class="secondary-btn" href="https://t.me/MailPayEt" target="_blank" rel="noopener">📢 Join Official Channel</a>
   </div>
 </section>
 </main>
 
 <footer>
-  <p>© 2026 MailPay. All rights reserved.</p>
+  <p>© 2026 MailPay Ethiopia. All rights reserved.</p>
   <p class="footer-note">MailPay is an independent service and is not affiliated with Google, Telebirr, M-PESA, or Commercial Bank of Ethiopia.</p>
 </footer>
+
+<script>
+function switchLang(lang) {
+  const enElements = document.querySelectorAll('.lang-en');
+  const amElements = document.querySelectorAll('.lang-am');
+  const btnEn = document.getElementById('btn-en');
+  const btnAm = document.getElementById('btn-am');
+
+  if (lang === 'am') {
+    enElements.forEach(el => el.style.display = 'none');
+    amElements.forEach(el => el.style.display = 'block');
+    btnEn.classList.remove('active');
+    btnAm.classList.add('active');
+  } else {
+    amElements.forEach(el => el.style.display = 'none');
+    enElements.forEach(el => el.style.display = 'block');
+    btnAm.classList.remove('active');
+    btnEn.classList.add('active');
+  }
+}
+</script>
 </body>
 </html>
