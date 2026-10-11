@@ -26,7 +26,7 @@ h1{font-size:clamp(32px,6vw,54px);line-height:1.15;margin:20px 0;letter-spacing:
 .note{margin-top:14px;color:var(--muted);font-size:14px}
 
 /* Steps Section */
-.steps,.requirements,.payments,.removal-guide{max-width:1050px;margin:0 auto;padding:45px 20px}
+.steps,.requirements,.payments,.removal-guide,.socials-section{max-width:1050px;margin:0 auto;padding:45px 20px}
 h2{font-size:30px;margin-bottom:20px;text-align:center}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .grid article{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:25px}
@@ -47,6 +47,16 @@ h3{margin-bottom:6px}.grid p,.requirements li{color:var(--muted)}
 .payment-icon{flex:0 0 54px;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:26px;background:#111827;color:white}
 .cbe-icon{border-radius:14px;font-size:12px}
 
+/* Social Media Buttons */
+.social-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;max-width:850px;margin:0 auto}
+.social-btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:12px;text-decoration:none;color:white;font-weight:700;font-size:15px;box-shadow:0 4px 15px rgba(0,0,0,0.08);transition:.2s}
+.social-btn:hover{transform:translateY(-3px);opacity:0.95}
+.social-icon{font-size:18px}
+.fb-btn{background:#1877f2}
+.ig-btn{background:linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)}
+.wa-btn{background:#25d366}
+.tt-btn{background:#000000}
+
 /* CTA Footer Section */
 .sell{max-width:1050px;margin:20px auto 60px;padding:40px 30px;border-radius:22px;background:#111827;color:white;display:flex;align-items:center;justify-content:space-between;gap:25px}
 .sell h2{text-align:left;margin:8px 0}.sell p{color:#cbd5e1}.sell .badge{background:#1f2937;color:#93c5fd}
@@ -57,7 +67,7 @@ footer{text-align:center;padding:28px 20px;color:var(--muted);border-top:1px sol
 @media(max-width:750px){
   .nav{padding:0 15px}
   .nav-btn{display:none}
-  .grid,.payment-grid{grid-template-columns:1fr}
+  .grid,.payment-grid,.social-grid{grid-template-columns:1fr}
   .sell{margin:10px 20px 40px;flex-direction:column;align-items:flex-start}
   .sell-actions{width:100%}
   .sell-actions a{flex:1;text-align:center}
